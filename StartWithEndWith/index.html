@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script type="text/javascript">
+        var string = prompt("Please enter a string.");
+        var testStart = string.startsWith('j');
+        var testEnd = string.endsWith('t');
+        if (testStart == true && testEnd == true) {
+            console.log(`${string} sarts with 'j' and ends with 't'`);
+        } else if (testStart == true && testEnd == false) {
+            console.log(`${string} sarts with 'j' but not ends with 't'`);
+        }else if (testStart == false && testEnd == true) {
+            console.log(`${string} does'nt sart with 'j' but ends with 't'`);
+        }else {
+            console.log(`${string} neither sart with 'j' nor ends with 't'`);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

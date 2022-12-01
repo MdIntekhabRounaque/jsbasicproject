@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script type="text/javascript">
+        var num = prompt("Please enter a number.")
+        var temp = num;
+        var noOfDigit = num.toString().length;
+        var sum=0;
+        while(temp>0){
+            var data= temp%10;
+            sum+= data**noOfDigit;
+            console.log(sum)
+            temp= parseInt(temp/10);
+            console.log(temp);
+        } if(sum==num){
+            console.log(`${num} is an angstrom number.`)
+        }else{
+            console.log(`${num} is not an angstrom number.`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script type="text/javascript">
+        var num1 = prompt("Pleas enter first number");
+        var num2 = prompt("Pleas enter second number");
+        var opr = prompt("Please enter operator +/-/X//")
+        switch (opr) {
+            case "+": var res = parseFloat(num1) + parseFloat(num2);
+                console.log(`${num1} + ${num2} = ${res}`);
+                break;
+            case "-": var res = parseFloat(num1) - parseFloat(num2);
+                console.log(`${num1} - ${num2} = ${res}`);
+                break;
+            case "x": var res = parseFloat(num1) * parseFloat(num2);
+                console.log(`${num1} X ${num2} = ${res}`);
+                break;
+            case "/": var res = parseFloat(num1) / parseFloat(num2);
+                console.log(`${num1} / ${num2} = ${res}`);
+                break;
+            default:
+                console.log('Invalid operator');
+        }
+        alert("Hello");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

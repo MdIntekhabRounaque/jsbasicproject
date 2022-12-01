@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <script type="text/javascript">
+        var string = prompt("Please enter a string.");
+        var length= string.length;
+        var msg = "It is a palindrome string."
+        for (var i =0; i <length/2 ; i++){
+            if(string[i] != string[length-1-i]){
+                msg = "It is not a palindrome string."
+            }
+            
+        }console.log(`${string} :  ${msg}`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
