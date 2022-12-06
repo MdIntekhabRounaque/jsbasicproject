@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title>Document</title>
 
     <script type="text/javascript">
-        var string = prompt('Pleasae enter a string.');
-        var first= string.charAt(0);
-        var rem = string.slice(1);
-        var upper=first.toLocaleUpperCase();
-        var caps = upper+rem;
-        console.log(caps);
+        var string = prompt("Please enter a string.");
+        var letter = prompt("Please enter a letter.");
+        var strlen = string.length;
+        var count = 0;
+        for (var i = 0; i < strlen; i++) {
+            if (string[i] == letter) {
+                count++;
+            }
+        }
+        console.log(`${string} has ${count} ${letter}`)
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
